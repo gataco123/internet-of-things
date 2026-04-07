@@ -39,9 +39,8 @@
 
 # debug information files
 *.dwo
-
-# Created by https://www.toptal.com/developers/gitignore/api/node,python,c,c++
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,python,c,c++
+# Created by https://www.toptal.com/developers/gitignore/api/python,c++,node,c
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,c++,node,c
 
 ### C ###
 # Prerequisites
@@ -382,7 +381,6 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -424,4 +422,4 @@ poetry.toml
 # LSP config files
 pyrightconfig.json
 
-# End of https://www.toptal.com/developers/gitignore/api/node,python,c,c++
+# End of https://www.toptal.com/developers/gitignore/api/python,c++,node,c
