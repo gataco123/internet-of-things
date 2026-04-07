@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
+import os 
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
 ]
 
 MIDDLEWARE = [
@@ -76,10 +79,25 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    },
+    'local':
+    {
+        'ENGINE' :'django.db.backend.postgresql',
+        'NAME' : 'internetCosas2',
+        'USER': 'postgres',
+        'PASSWORD' : os.getenv('unicesmag'),
+        'PORT' : '5432',
+    },
+    'supabase':
+    {
+        'ENGINE' :'django.db.backend.postgresql',
+        'NAME ': 'postgres',
+        'USER' : os.getenv('postgres.fhshcldjyqthxinssbfe'),
+        'PASSWORD': os.getenv('3uttercup123'),
+        'HOST' : os.getenv('aws-0-us-west-2.pooler.supabase.com'),
+        'PORT' : '6543'
     }
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
 

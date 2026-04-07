@@ -1,4 +1,9 @@
 # Prerequisites
+
+
+.env
+
+
 *.d
 
 # Compiled Object files
